@@ -1,0 +1,95 @@
+2022-01-16 13:29:30,290 DEBUG decos.py Была вызвана функция main c параметрами () , {}. Вызов из модуля __main__
+2022-01-16 13:29:30,290 DEBUG decos.py Была вызвана функция config_load c параметрами () , {}. Вызов из модуля __main__
+2022-01-16 13:29:30,290 DEBUG decos.py Была вызвана функция arg_parser c параметрами ('7777', '') , {}. Вызов из модуля __main__
+2022-01-16 13:29:30,290 DEBUG server.py Инициализация парсера аргументов коммандной строки: ['server.py']
+2022-01-16 13:29:30,290 DEBUG server.py Аргументы успешно загружены.
+2022-01-16 13:29:30,352 INFO core.py Запущен сервер, порт для подключений: 7777 , адрес с которого принимаются подключения: . Если адрес не указан, принимаются соединения с любых адресов.
+2022-01-16 13:29:39,393 INFO core.py Установлено соедение с ПК ('127.0.0.1', 54926)
+2022-01-16 13:29:39,393 DEBUG decos.py Была вызвана функция get_message c параметрами (<socket.socket fd=1332, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 54926)>,) , {}. Вызов из модуля common.utils
+2022-01-16 13:29:39,393 DEBUG core.py Разбор сообщения от клиента : {'action': 'presence', 'time': 1642328979.3930547, 'user': {'account_name': 'test1'}}
+2022-01-16 13:29:39,393 DEBUG core.py Start auth process for {'account_name': 'test1'}
+2022-01-16 18:18:26,681 DEBUG decos.py Была вызвана функция main c параметрами () , {}. Вызов из модуля __main__
+2022-01-16 18:18:26,681 DEBUG decos.py Была вызвана функция config_load c параметрами () , {}. Вызов из модуля __main__
+2022-01-16 18:18:26,681 DEBUG decos.py Была вызвана функция arg_parser c параметрами ('7777', '') , {}. Вызов из модуля __main__
+2022-01-16 18:18:26,681 DEBUG server.py Инициализация парсера аргументов коммандной строки: ['D:\\Projects\\pyqt\\project\\server.py']
+2022-01-16 18:18:26,681 DEBUG server.py Аргументы успешно загружены.
+2022-01-16 18:18:37,212 DEBUG decos.py Была вызвана функция main c параметрами () , {}. Вызов из модуля __main__
+2022-01-16 18:18:37,212 DEBUG decos.py Была вызвана функция config_load c параметрами () , {}. Вызов из модуля __main__
+2022-01-16 18:18:37,213 DEBUG decos.py Была вызвана функция arg_parser c параметрами ('7777', '') , {}. Вызов из модуля __main__
+2022-01-16 18:18:37,213 DEBUG server.py Инициализация парсера аргументов коммандной строки: ['d:/Projects/pyqt/project/server.py']
+2022-01-16 18:18:37,215 DEBUG server.py Аргументы успешно загружены.
+2022-01-16 18:18:37,281 INFO core.py Запущен сервер, порт для подключений: 7777 , адрес с которого принимаются подключения: . Если адрес не указан, принимаются соединения с любых адресов.
+2022-01-16 18:22:33,459 INFO core.py Установлено соедение с ПК ('127.0.0.1', 53460)
+2022-01-16 18:22:33,963 DEBUG decos.py Была вызвана функция get_message c параметрами (<socket.socket fd=1348, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53460)>,) , {}. Вызов из модуля common.utils
+2022-01-16 18:22:33,963 DEBUG core.py Getting data from client exception.
+Traceback (most recent call last):
+  File "d:\Projects\pyqt\project\server\core.py", line 89, in run
+    get_message(client_with_message), client_with_message)
+  File "d:\Projects\pyqt\project\common\decos.py", line 30, in log_saver
+    ret = func_to_log(*args, **kwargs)
+  File "d:\Projects\pyqt\project\common\utils.py", line 13, in get_message
+    response = json.loads(json_response)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2022-01-16 18:22:34,010 INFO core.py Клиент ('127.0.0.1', 53460) отключился от сервера.
+2022-01-16 18:23:10,474 INFO core.py Установлено соедение с ПК ('127.0.0.1', 53461)
+2022-01-16 18:23:10,979 DEBUG decos.py Была вызвана функция get_message c параметрами (<socket.socket fd=1716, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53461)>,) , {}. Вызов из модуля common.utils
+2022-01-16 18:23:10,979 DEBUG core.py Getting data from client exception.
+Traceback (most recent call last):
+  File "d:\Projects\pyqt\project\server\core.py", line 89, in run
+    get_message(client_with_message), client_with_message)
+  File "d:\Projects\pyqt\project\common\decos.py", line 30, in log_saver
+    ret = func_to_log(*args, **kwargs)
+  File "d:\Projects\pyqt\project\common\utils.py", line 13, in get_message
+    response = json.loads(json_response)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2022-01-16 18:23:10,979 INFO core.py Клиент ('127.0.0.1', 53461) отключился от сервера.
+2022-01-16 18:24:46,329 INFO core.py Установлено соедение с ПК ('127.0.0.1', 53463)
+2022-01-16 18:24:46,841 DEBUG decos.py Была вызвана функция get_message c параметрами (<socket.socket fd=1520, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53463)>,) , {}. Вызов из модуля common.utils
+2022-01-16 18:24:46,842 DEBUG core.py Разбор сообщения от клиента : {'action': 'presence', 'time': 1642346686.338998, 'user': {'account_name': 'v1', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA3PaZfY/PpCWevuBVX1PR\nao8/mZV2PdbJibeTSIoBagBdswg90Ym7WbmptNwSYkJnsVPByeKDv6i0yeMBcBDj\nHEgUhc25PqbzG2NEp7pBIlNfObomJNkzRmdxbo8jutlMzU6kZFOqMbeNnGagAtud\ni1wvgkYw6mTV7fyjGl7aVaudFcGYPObNefZVqiTX70WmP9Fgv78uUaWAWANhobJr\nkXcDL6ALs7W/+nCxzWJrZib6m+StICVKqh375FkdKPM8Dh0tdZLIp2td+uuVu96R\nDY0jOXIOTlLSMZiPObafgqESAcNrh38lXrtDf6OpvjDC2kSTQxBjQsLtCoubGFwt\ngwIDAQAB\n-----END PUBLIC KEY-----'}}
+2022-01-16 18:24:46,843 DEBUG core.py Start auth process for {'account_name': 'v1', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA3PaZfY/PpCWevuBVX1PR\nao8/mZV2PdbJibeTSIoBagBdswg90Ym7WbmptNwSYkJnsVPByeKDv6i0yeMBcBDj\nHEgUhc25PqbzG2NEp7pBIlNfObomJNkzRmdxbo8jutlMzU6kZFOqMbeNnGagAtud\ni1wvgkYw6mTV7fyjGl7aVaudFcGYPObNefZVqiTX70WmP9Fgv78uUaWAWANhobJr\nkXcDL6ALs7W/+nCxzWJrZib6m+StICVKqh375FkdKPM8Dh0tdZLIp2td+uuVu96R\nDY0jOXIOTlLSMZiPObafgqESAcNrh38lXrtDf6OpvjDC2kSTQxBjQsLtCoubGFwt\ngwIDAQAB\n-----END PUBLIC KEY-----'}
+2022-01-16 18:24:46,846 DEBUG core.py Correct username, starting passwd check.
+2022-01-16 18:29:22,865 DEBUG decos.py Была вызвана функция main c параметрами () , {}. Вызов из модуля __main__
+2022-01-16 18:29:22,865 DEBUG decos.py Была вызвана функция config_load c параметрами () , {}. Вызов из модуля __main__
+2022-01-16 18:29:22,866 DEBUG decos.py Была вызвана функция arg_parser c параметрами ('7777', '') , {}. Вызов из модуля __main__
+2022-01-16 18:29:22,866 DEBUG server.py Инициализация парсера аргументов коммандной строки: ['d:/Projects/pyqt/project/server.py']
+2022-01-16 18:29:22,868 DEBUG server.py Аргументы успешно загружены.
+2022-01-16 18:29:22,904 INFO core.py Запущен сервер, порт для подключений: 7777 , адрес с которого принимаются подключения: . Если адрес не указан, принимаются соединения с любых адресов.
+2022-01-16 18:29:33,719 INFO core.py Установлено соедение с ПК ('127.0.0.1', 50204)
+2022-01-16 18:29:34,228 DEBUG decos.py Была вызвана функция get_message c параметрами (<socket.socket fd=1332, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 50204)>,) , {}. Вызов из модуля common.utils
+2022-01-16 18:29:34,229 DEBUG core.py Разбор сообщения от клиента : {'action': 'presence', 'time': 1642346973.729473, 'user': {'account_name': 'v1', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA3PaZfY/PpCWevuBVX1PR\nao8/mZV2PdbJibeTSIoBagBdswg90Ym7WbmptNwSYkJnsVPByeKDv6i0yeMBcBDj\nHEgUhc25PqbzG2NEp7pBIlNfObomJNkzRmdxbo8jutlMzU6kZFOqMbeNnGagAtud\ni1wvgkYw6mTV7fyjGl7aVaudFcGYPObNefZVqiTX70WmP9Fgv78uUaWAWANhobJr\nkXcDL6ALs7W/+nCxzWJrZib6m+StICVKqh375FkdKPM8Dh0tdZLIp2td+uuVu96R\nDY0jOXIOTlLSMZiPObafgqESAcNrh38lXrtDf6OpvjDC2kSTQxBjQsLtCoubGFwt\ngwIDAQAB\n-----END PUBLIC KEY-----'}}
+2022-01-16 18:29:34,230 DEBUG core.py Start auth process for {'account_name': 'v1', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA3PaZfY/PpCWevuBVX1PR\nao8/mZV2PdbJibeTSIoBagBdswg90Ym7WbmptNwSYkJnsVPByeKDv6i0yeMBcBDj\nHEgUhc25PqbzG2NEp7pBIlNfObomJNkzRmdxbo8jutlMzU6kZFOqMbeNnGagAtud\ni1wvgkYw6mTV7fyjGl7aVaudFcGYPObNefZVqiTX70WmP9Fgv78uUaWAWANhobJr\nkXcDL6ALs7W/+nCxzWJrZib6m+StICVKqh375FkdKPM8Dh0tdZLIp2td+uuVu96R\nDY0jOXIOTlLSMZiPObafgqESAcNrh38lXrtDf6OpvjDC2kSTQxBjQsLtCoubGFwt\ngwIDAQAB\n-----END PUBLIC KEY-----'}
+2022-01-16 18:29:34,246 DEBUG core.py Correct username, starting passwd check.
+2022-01-16 18:29:34,249 DEBUG core.py Auth message = {'response': 511, 'bin': '1e12c27a51df3ec2ccf4ae4aa2e6a78906ca9a3d76dbb854e3cc3a67187f4696eb62b7047dd35a5e6d4c51a1e7b37ba98ee9f8bda9cb64d593a06688a3a47a19'}
+2022-01-16 18:29:34,249 DEBUG decos.py Была вызвана функция send_message c параметрами (<socket.socket fd=1332, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 50204)>, {'response': 511, 'bin': '1e12c27a51df3ec2ccf4ae4aa2e6a78906ca9a3d76dbb854e3cc3a67187f4696eb62b7047dd35a5e6d4c51a1e7b37ba98ee9f8bda9cb64d593a06688a3a47a19'}) , {}. Вызов из модуля common.utils
+2022-01-16 18:29:34,250 DEBUG decos.py Была вызвана функция get_message c параметрами (<socket.socket fd=1332, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 50204)>,) , {}. Вызов из модуля common.utils
+2022-01-16 18:29:34,251 DEBUG decos.py Была вызвана функция send_message c параметрами (<socket.socket fd=1332, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 50204)>, {'response': 400, 'error': 'Неверный пароль.'}) , {}. Вызов из модуля common.utils
+2022-01-16 18:29:48,147 INFO core.py Установлено соедение с ПК ('127.0.0.1', 50205)
+2022-01-16 18:29:48,657 DEBUG decos.py Была вызвана функция get_message c параметрами (<socket.socket fd=1332, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 50205)>,) , {}. Вызов из модуля common.utils
+2022-01-16 18:29:48,658 DEBUG core.py Разбор сообщения от клиента : {'action': 'presence', 'time': 1642346988.158462, 'user': {'account_name': 'v1', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA3PaZfY/PpCWevuBVX1PR\nao8/mZV2PdbJibeTSIoBagBdswg90Ym7WbmptNwSYkJnsVPByeKDv6i0yeMBcBDj\nHEgUhc25PqbzG2NEp7pBIlNfObomJNkzRmdxbo8jutlMzU6kZFOqMbeNnGagAtud\ni1wvgkYw6mTV7fyjGl7aVaudFcGYPObNefZVqiTX70WmP9Fgv78uUaWAWANhobJr\nkXcDL6ALs7W/+nCxzWJrZib6m+StICVKqh375FkdKPM8Dh0tdZLIp2td+uuVu96R\nDY0jOXIOTlLSMZiPObafgqESAcNrh38lXrtDf6OpvjDC2kSTQxBjQsLtCoubGFwt\ngwIDAQAB\n-----END PUBLIC KEY-----'}}
+2022-01-16 18:29:48,659 DEBUG core.py Start auth process for {'account_name': 'v1', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA3PaZfY/PpCWevuBVX1PR\nao8/mZV2PdbJibeTSIoBagBdswg90Ym7WbmptNwSYkJnsVPByeKDv6i0yeMBcBDj\nHEgUhc25PqbzG2NEp7pBIlNfObomJNkzRmdxbo8jutlMzU6kZFOqMbeNnGagAtud\ni1wvgkYw6mTV7fyjGl7aVaudFcGYPObNefZVqiTX70WmP9Fgv78uUaWAWANhobJr\nkXcDL6ALs7W/+nCxzWJrZib6m+StICVKqh375FkdKPM8Dh0tdZLIp2td+uuVu96R\nDY0jOXIOTlLSMZiPObafgqESAcNrh38lXrtDf6OpvjDC2kSTQxBjQsLtCoubGFwt\ngwIDAQAB\n-----END PUBLIC KEY-----'}
+2022-01-16 18:29:48,662 DEBUG core.py Correct username, starting passwd check.
+2022-01-16 18:29:48,664 DEBUG core.py Auth message = {'response': 511, 'bin': 'edad4e9c6b2568155d5693e48920cc5ccc436552adb9562e3d47eec08a88c51592e8d85806994dcf40ac1bd9aa0a8cb08f7694f71b62d26338032804bd8ba42d'}
+2022-01-16 18:29:48,665 DEBUG decos.py Была вызвана функция send_message c параметрами (<socket.socket fd=1332, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 50205)>, {'response': 511, 'bin': 'edad4e9c6b2568155d5693e48920cc5ccc436552adb9562e3d47eec08a88c51592e8d85806994dcf40ac1bd9aa0a8cb08f7694f71b62d26338032804bd8ba42d'}) , {}. Вызов из модуля common.utils
+2022-01-16 18:29:48,666 DEBUG decos.py Была вызвана функция get_message c параметрами (<socket.socket fd=1332, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 50205)>,) , {}. Вызов из модуля common.utils
+2022-01-16 18:29:48,667 DEBUG decos.py Была вызвана функция send_message c параметрами (<socket.socket fd=1332, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 50205)>, {'response': 200}) , {}. Вызов из модуля common.utils
+2022-01-16 18:29:49,208 DEBUG decos.py Была вызвана функция get_message c параметрами (<socket.socket fd=1332, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 50205)>,) , {}. Вызов из модуля common.utils
+2022-01-16 18:29:49,209 DEBUG core.py Разбор сообщения от клиента : {'action': 'get_users', 'time': 1642346988.6695495, 'account_name': 'v1'}
+2022-01-16 18:29:49,212 DEBUG decos.py Была вызвана функция send_message c параметрами (<socket.socket fd=1332, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 50205)>, {'response': 202, 'data_list': ['v1']}) , {}. Вызов из модуля common.utils
+2022-01-16 18:29:49,713 DEBUG decos.py Была вызвана функция get_message c параметрами (<socket.socket fd=1332, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 50205)>,) , {}. Вызов из модуля common.utils
+2022-01-16 18:29:49,714 DEBUG core.py Разбор сообщения от клиента : {'action': 'get_contacts', 'time': 1642346989.2534776, 'user': 'v1'}
+2022-01-16 18:29:49,724 DEBUG decos.py Была вызвана функция send_message c параметрами (<socket.socket fd=1332, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 50205)>, {'response': 202, 'data_list': []}) , {}. Вызов из модуля common.utils
+2022-01-16 18:29:53,331 DEBUG decos.py Была вызвана функция get_message c параметрами (<socket.socket fd=1332, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 50205)>,) , {}. Вызов из модуля common.utils
+2022-01-16 18:29:53,331 DEBUG core.py Разбор сообщения от клиента : {'action': 'exit', 'time': 1642346993.2858183, 'account_name': 'v1'}
+2022-01-16 18:29:53,331 INFO core.py Клиент ('127.0.0.1', 50205) отключился от сервера.
